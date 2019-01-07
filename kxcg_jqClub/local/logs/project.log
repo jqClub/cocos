@@ -1,66 +1,79 @@
-2019-01-04T11:18:33.033Z - normal: Load ~/.CocosCreator/settings.json
-2019-01-04T11:18:33.037Z - normal: checking language setting...
-2019-01-04T11:18:33.037Z - normal: Language: zh
-2019-01-04T11:18:34.889Z - success: protocol editor-framework registered
-2019-01-04T11:18:34.889Z - success: protocol app registered
-2019-01-04T11:18:34.889Z - success: protocol theme registered
-2019-01-04T11:18:34.890Z - success: protocol packages registered
-2019-01-04T11:18:34.890Z - success: protocol unpack registerred
-2019-01-04T11:18:34.890Z - success: protocol disable-commonjs registerred
-2019-01-04T11:18:35.167Z - normal: connected!
-2019-01-04T11:18:35.171Z - normal: Check project D:\!yongwang\github\cocos\kxcg_jqClub
-2019-01-04T11:18:35.174Z - normal: Initializing Cocos2d
-2019-01-04T11:18:35.437Z - normal: Initializing Asset Database
-2019-01-04T11:18:35.477Z - success: protocol uuid registerred
-2019-01-04T11:18:35.477Z - success: protocol db registerred
-2019-01-04T11:18:35.478Z - success: protocol thumbnail registerred
-2019-01-04T11:18:35.478Z - normal: Loading editor/builtin packages
-2019-01-04T11:18:35.499Z - success: anysdk loaded
-2019-01-04T11:18:35.621Z - success: assets loaded
-2019-01-04T11:18:35.623Z - success: builder loaded
-2019-01-04T11:18:35.625Z - success: cocos-analytics loaded
-2019-01-04T11:18:35.627Z - success: console loaded
-2019-01-04T11:18:35.664Z - success: fb-instant-games loaded
-2019-01-04T11:18:35.666Z - success: hierarchy loaded
-2019-01-04T11:18:35.669Z - success: inspector loaded
-2019-01-04T11:18:35.669Z - success: keystore loaded
-2019-01-04T11:18:35.670Z - success: node-library loaded
-2019-01-04T11:18:35.671Z - success: package-asset loaded
-2019-01-04T11:18:35.673Z - success: preferences loaded
-2019-01-04T11:18:35.674Z - success: project-exporter loaded
-2019-01-04T11:18:35.688Z - success: project-importer loaded
-2019-01-04T11:18:35.690Z - success: project-settings loaded
-2019-01-04T11:18:35.692Z - success: ui-kit loaded
-2019-01-04T11:18:35.693Z - success: ui-grid loaded
-2019-01-04T11:18:35.696Z - success: scene loaded
-2019-01-04T11:18:35.696Z - success: sprite-editor loaded
-2019-01-04T11:18:35.699Z - success: store loaded
-2019-01-04T11:18:35.703Z - success: timeline loaded
-2019-01-04T11:18:35.703Z - normal: Loading builtin packages
-2019-01-04T11:18:35.704Z - success: asset-db-debugger loaded
-2019-01-04T11:18:35.705Z - success: code-editor loaded
-2019-01-04T11:18:35.706Z - success: color-picker loaded
-2019-01-04T11:18:35.708Z - success: package-manager loaded
-2019-01-04T11:18:35.711Z - success: sdkbox loaded
-2019-01-04T11:18:35.713Z - success: tester loaded
-2019-01-04T11:18:35.715Z - success: ui-kit-preview-extra loaded
-2019-01-04T11:18:35.716Z - success: ui-kit-preview loaded
-2019-01-04T11:18:35.716Z - success: ui-tree loaded
-2019-01-04T11:18:36.784Z - normal: Initializing project D:\!yongwang\github\cocos\kxcg_jqClub
-2019-01-04T11:18:36.787Z - normal: Loading packages
-2019-01-04T11:18:36.792Z - normal: Watching packages
-2019-01-04T11:18:36.856Z - normal: Run Application
-2019-01-04T11:18:37.482Z - success: preview server running at http://localhost:7456
-2019-01-04T11:18:43.381Z - normal: 1.9.1
-2019-01-04T11:18:43.674Z - warn: Script attached to "Canvas" in scene "game.fire" is missing or invalid. Detailed information:
+2019-01-07T11:17:01.112Z - normal: Load ~/.CocosCreator/settings.json
+2019-01-07T11:17:01.116Z - normal: checking language setting...
+2019-01-07T11:17:01.116Z - normal: Language: zh
+2019-01-07T11:17:02.755Z - success: protocol editor-framework registered
+2019-01-07T11:17:02.755Z - success: protocol app registered
+2019-01-07T11:17:02.755Z - success: protocol theme registered
+2019-01-07T11:17:02.755Z - success: protocol packages registered
+2019-01-07T11:17:02.755Z - success: protocol unpack registerred
+2019-01-07T11:17:02.755Z - success: protocol disable-commonjs registerred
+2019-01-07T11:17:02.978Z - normal: connected!
+2019-01-07T11:17:02.986Z - normal: Check project D:\!yongwang\github\cocos\kxcg_jqClub
+2019-01-07T11:17:02.997Z - normal: Initializing project D:\!yongwang\github\cocos\kxcg_jqClub
+2019-01-07T11:17:03.002Z - normal: Initializing Cocos2d
+2019-01-07T11:17:03.670Z - normal: Initializing Asset Database
+2019-01-07T11:17:03.709Z - success: protocol uuid registerred
+2019-01-07T11:17:03.709Z - success: protocol db registerred
+2019-01-07T11:17:03.709Z - success: protocol thumbnail registerred
+2019-01-07T11:17:03.709Z - normal: Loading editor/builtin packages
+2019-01-07T11:17:03.840Z - success: assets loaded
+2019-01-07T11:17:03.844Z - success: builder loaded
+2019-01-07T11:17:03.847Z - success: cocos-analytics loaded
+2019-01-07T11:17:03.851Z - success: console loaded
+2019-01-07T11:17:03.892Z - success: fb-instant-games loaded
+2019-01-07T11:17:03.893Z - success: google-instant-games loaded
+2019-01-07T11:17:03.897Z - success: hierarchy loaded
+2019-01-07T11:17:03.899Z - success: inspector loaded
+2019-01-07T11:17:03.901Z - success: keystore loaded
+2019-01-07T11:17:03.904Z - success: node-library loaded
+2019-01-07T11:17:03.905Z - success: package-asset loaded
+2019-01-07T11:17:03.907Z - success: preferences loaded
+2019-01-07T11:17:03.909Z - success: project-exporter loaded
+2019-01-07T11:17:03.922Z - success: project-importer loaded
+2019-01-07T11:17:03.924Z - success: project-settings loaded
+2019-01-07T11:17:03.926Z - success: ui-kit loaded
+2019-01-07T11:17:03.928Z - success: scene loaded
+2019-01-07T11:17:03.929Z - success: sprite-editor loaded
+2019-01-07T11:17:03.933Z - success: store loaded
+2019-01-07T11:17:03.936Z - success: timeline loaded
+2019-01-07T11:17:03.936Z - normal: Loading builtin packages
+2019-01-07T11:17:03.939Z - success: asset-db-debugger loaded
+2019-01-07T11:17:03.941Z - success: code-editor loaded
+2019-01-07T11:17:03.942Z - success: color-picker loaded
+2019-01-07T11:17:04.022Z - success: fb-audience-network loaded
+2019-01-07T11:17:04.026Z - success: fb-live-stream loaded
+2019-01-07T11:17:04.029Z - success: google-play-instant loaded
+2019-01-07T11:17:04.030Z - success: jsb-adapter loaded
+2019-01-07T11:17:04.033Z - success: oppo-runtime loaded
+2019-01-07T11:17:04.035Z - success: package-manager loaded
+2019-01-07T11:17:04.190Z - success: qqplay-adapter loaded
+2019-01-07T11:17:04.192Z - success: runtime-dev-tools loaded
+2019-01-07T11:17:04.197Z - success: sdkbox loaded
+2019-01-07T11:17:04.202Z - success: tester loaded
+2019-01-07T11:17:04.205Z - success: ui-grid loaded
+2019-01-07T11:17:04.207Z - success: ui-kit-preview-extra loaded
+2019-01-07T11:17:04.209Z - success: ui-kit-preview loaded
+2019-01-07T11:17:04.211Z - success: ui-tree loaded
+2019-01-07T11:17:04.216Z - success: vivo-runtime loaded
+2019-01-07T11:17:04.217Z - success: weapp-adapter loaded
+2019-01-07T11:17:05.201Z - normal: Loading packages
+2019-01-07T11:17:05.206Z - normal: Watching packages
+2019-01-07T11:17:05.565Z - normal: Run Application
+2019-01-07T11:17:06.069Z - success: preview server running at http://localhost:7456
+2019-01-07T11:17:10.403Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-tree (could not be found)
+    at a.remove (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
+    at Object.e.remove (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
+    at r.series.n (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\package.js:1:4613)
+    at D:\Ruanjian\CocosCreator2.0\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (D:\Ruanjian\CocosCreator2.0\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-01-07T11:17:10.405Z - success: ui-tree unloaded
+2019-01-07T11:17:10.411Z - success: ui-tree loaded
+2019-01-07T11:17:11.592Z - warn: Script attached to "Canvas" in scene "game.fire" is missing or invalid. Detailed information:
 Node path: "Canvas"
 Asset url: "db://assets/game.fire"
 Script UUID: "aaba03eb-9fee-4c57-8d14-297ca1d19bcb"
 Class ID: "aaba0Prn+5MV40UKXyh0ZvL"
-
-2019-01-04T11:18:43.685Z - warn: Script attached to "star" in prefab "star.prefab" is missing or invalid. Detailed information:
-Node path: "star"
-Asset url: "db://assets/star.prefab"
-Script UUID: "4d856a54-ca21-4596-8499-f5cc3c47ce0a"
-Class ID: "4d856pUyiFFloSZ9cw8R84K"
 
