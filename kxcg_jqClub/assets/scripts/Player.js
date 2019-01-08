@@ -116,11 +116,18 @@ cc.Class({
         } else if(that.accRight) {
             that.xSpeed += that.accel * dt
         }
+        // if(Math.abs(that.xSpeed) > that.maxMoveSpeed) {
+        //     // 乘以对应的符号，Math.abs是取绝对值
+        //     var symbol = that.xSpeed / Math.abs(that.xSpeed)
+        //     that.xSpeed = that.maxMoveSpeed * symbol
+        // }
 
-        if(Math.abs(that.xSpeed) > that.maxMoveSpeed) {
-            // 乘以对应的符号，Math.abs是取绝对值
+
+        var width = that.game.background.width
+        if(Math.abs(that.xSpeed) > width) {
+                    //     // 乘以对应的符号，Math.abs是取绝对值
             var symbol = that.xSpeed / Math.abs(that.xSpeed)
-            that.xSpeed = that.maxMoveSpeed * symbol
+            that.xSpeed = width * symbol
         }
         this.node.x = that.xSpeed
     },

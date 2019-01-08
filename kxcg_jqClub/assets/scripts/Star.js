@@ -59,6 +59,10 @@ cc.Class({
         var that = this
         // 生成一个新的星星
         that.game.spawnNewStar()
+
+        // 19.1.8加上分数
+        that.game.addScore()
+
         // 销毁当前的星星
         that.node.destroy()
     },

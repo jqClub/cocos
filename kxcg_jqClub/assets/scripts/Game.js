@@ -35,6 +35,12 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+
+         // 得分 节点，用于获取主角弹跳的高度，和控制主角行动开关
+        scoreDisplay: {
+            default: null,
+            type: cc.Label  //*这里的类型换成了Label */
+        },
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -69,9 +75,12 @@ cc.Class({
         // 生成一个新的星星
         this.spawnNewStar();
 
-        // // 19.1.8如何在星星组件上，获取主角的坐标
-        // // 在主角组件上暂存 Game 对象的引用
-        // that.player.getComponent('Player').game = this;
+        // 19.1.8如何在星星组件上，获取主角的坐标
+        // 在主角组件上暂存 Game 对象的引用
+        that.player.getComponent('Player').game = this;
+
+        // 初始化计分
+        this.score = 0;
     },
     spawnNewStar: function() {
         var that = this
@@ -96,9 +105,16 @@ cc.Class({
         // 返回星星坐标
         return cc.v2(randX, randY);
     },
+    addScore: function() {
+        var that = this
+        that.score  += 1
+        that.scoreDisplay.string = 'score: ' + that.score
+    },
     start () {
 
     },
 
-    // update (dt) {},
+    update (dt) {
+        log(2222, dt)
+    },
 });
