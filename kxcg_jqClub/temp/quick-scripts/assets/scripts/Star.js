@@ -13,6 +13,7 @@ cc._RF.push(module, '60a9bquxORK2Y/7xrQs/WHP', 'Star', __filename);
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var log = console.log.bind(console);
 
 cc.Class({
     extends: cc.Component,
@@ -43,11 +44,38 @@ cc.Class({
 
     // onLoad () {},
 
-    start: function start() {}
-}
+    start: function start() {
+        var that = this;
+    },
 
-// update (dt) {},
-);
+    getDist: function getDist() {
+        var that = this;
+        // 根据player节点位置来判断
+        var playerLocal = that.game.player.getPosition();
+        // log(that.game, playerLocal)
+        // 返回2点间的坐标
+        var dist = that.node.position.sub(playerLocal);
+        // 计算2点间的坐标
+        dist = dist.mag();
+        return dist;
+    },
+    // 收集星星的函数
+    onPicked: function onPicked() {
+        var that = this;
+        // 生成一个新的星星
+        that.game.spawnNewStar();
+        // 销毁当前的星星
+        that.node.destroy();
+    },
+
+    update: function update(dt) {
+        var that = this;
+        if (that.getDist() < that.pickRadius) {
+            that.onPicked();
+            return;
+        }
+    }
+});
 
 cc._RF.pop();
         }

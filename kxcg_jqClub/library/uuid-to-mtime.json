@@ -255,8 +255,8 @@
     "relativePath": "mikado_outline_shadow.png"
   },
   "69c0b88a-6ca1-4635-88bb-e6e74b8ded7f": {
-    "asset": 1546859620067,
-    "meta": 1546859620407,
+    "asset": 1546937554099,
+    "meta": 1546937554118,
     "relativePath": "game.fire"
   },
   "0b1d8c9e-39cc-48ab-b481-9bc82ade589d": {
@@ -289,25 +289,10 @@
     "meta": 1546859733177,
     "relativePath": "textures\\star.png"
   },
-  "67d5556a-41d6-41a1-9fe3-544a96617c8c": {
-    "asset": 1546830275683,
-    "meta": 1546830366909,
-    "relativePath": "scripts\\Player.js"
-  },
-  "60a9baae-c4e4-4ad9-8ffb-c6b42cfd61cf": {
-    "asset": 1546831566165,
-    "meta": 1546831568921,
-    "relativePath": "scripts\\Star.js"
-  },
   "943afb75-4560-4de9-86f9-45a0d9b41004": {
     "asset": 1546831689960,
     "meta": 1546831689967,
     "relativePath": "star.prefab"
-  },
-  "efbd8f41-8de9-4283-951c-7e477891c265": {
-    "asset": 1546842575801,
-    "meta": 1546842583523,
-    "relativePath": "scripts\\Game.js"
   },
   "edd215b9-2796-4a05-aaf5-81f96c9281ce": {
     "asset": 1544704128000,
@@ -328,5 +313,20 @@
     "asset": 1544704128000,
     "meta": 1546859732891,
     "relativePath": "prefab\\tiledtile.prefab"
+  },
+  "67d5556a-41d6-41a1-9fe3-544a96617c8c": {
+    "asset": 1546937949421,
+    "meta": 1546937952249,
+    "relativePath": "scripts\\Player.js"
+  },
+  "efbd8f41-8de9-4283-951c-7e477891c265": {
+    "asset": 1546938101121,
+    "meta": 1546938159741,
+    "relativePath": "scripts\\Game.js"
+  },
+  "60a9baae-c4e4-4ad9-8ffb-c6b42cfd61cf": {
+    "asset": 1546937972788,
+    "meta": 1546938159742,
+    "relativePath": "scripts\\Star.js"
   }
 }

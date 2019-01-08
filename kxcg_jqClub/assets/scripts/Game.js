@@ -7,6 +7,7 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var log = console.log.bind(console)
 
 cc.Class({
     extends: cc.Component,
@@ -26,6 +27,11 @@ cc.Class({
         },
         // player 节点，用于获取主角弹跳的高度，和控制主角行动开关
         player: {
+            default: null,
+            type: cc.Node
+        },
+        // background 节点，用于获取主角弹跳的高度，和控制主角行动开关
+        background: {
             default: null,
             type: cc.Node
         },
@@ -50,9 +56,46 @@ cc.Class({
 
     onLoad () {
         var that = this
+        // 获取地平面的坐标(锚点默认在节点的中心)
+        var y = that.ground.y
+        var height = that.ground.height
+        var getLocal = y + height / 2
+        log(888888, y, height, getLocal)
+        // log(that.node.children)   //这里可以获取所有的节点
 
+        // // var jumpHeight = that.player.jumpHeight
+        // var jumpHeight = this.player.getComponent('Player').jumpHeight
+        
+        // 生成一个新的星星
+        this.spawnNewStar();
+
+        // // 19.1.8如何在星星组件上，获取主角的坐标
+        // // 在主角组件上暂存 Game 对象的引用
+        // that.player.getComponent('Player').game = this;
     },
+    spawnNewStar: function() {
+        var that = this
+        // 使用给定的模板在场景中生成一个新节点
+        var newStar = cc.instantiate(this.starPrefab);
+        // 将新增的节点添加到 Canvas 节点下面
+        this.node.addChild(newStar);
+        // 为星星设置一个随机位置
+        newStar.setPosition(that.getNewStarPosition());
 
+        // 19.1.8如何在星星组件上，获取主角的坐标
+        // 在星星组件上暂存 Game 对象的引用
+        newStar.getComponent('Star').game = this;
+    },
+    getNewStarPosition: function () {
+        var randX = 0;
+        // 根据地平面位置和主角跳跃高度，随机得到一个星星的 y 坐标
+        var randY = this.groundY + Math.random() * this.player.getComponent('Player').jumpHeight + 50;
+        // 根据屏幕宽度，随机得到一个星星 x 坐标
+        var maxX = this.node.width/2;
+        randX = (Math.random() - 0.5) * 2 * maxX;
+        // 返回星星坐标
+        return cc.v2(randX, randY);
+    },
     start () {
 
     },

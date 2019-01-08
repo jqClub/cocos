@@ -71,6 +71,17 @@ cc.Class({
         // 初始化键盘输入监听
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+
+        // 使用枚举类型来注册，点击的事件
+        // that.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+        //     console.log('Mouse down');
+        // }, this);
+
+        // 使用事件名来注册，点击的事件
+        // that.node.on('touchstart', function (event) {
+        //     console.log(event)
+        //     console.log('Mouse down', event.getLocation());
+        // }, this);
     },
 
     // 监听移动控制的事件
@@ -116,13 +127,23 @@ cc.Class({
             var symbol = that.xSpeed / Math.abs(that.xSpeed);
             that.xSpeed = that.maxMoveSpeed * symbol;
         }
-
         this.node.x = that.xSpeed;
     },
 
 
     // 在销毁的时候，不去监听键盘的事件
-    onDestroy: function onDestroy() {}
+    onDestroy: function onDestroy() {
+        // 取消键盘输入监听
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    },
+
+
+    hidePlayer: function hidePlayer() {
+        var that = this;
+        var active = that.node.active;
+        that.node.active = !active;
+    }
 });
 
 cc._RF.pop();

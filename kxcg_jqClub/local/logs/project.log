@@ -1,79 +1,77 @@
-2019-01-07T11:17:01.112Z - normal: Load ~/.CocosCreator/settings.json
-2019-01-07T11:17:01.116Z - normal: checking language setting...
-2019-01-07T11:17:01.116Z - normal: Language: zh
-2019-01-07T11:17:02.755Z - success: protocol editor-framework registered
-2019-01-07T11:17:02.755Z - success: protocol app registered
-2019-01-07T11:17:02.755Z - success: protocol theme registered
-2019-01-07T11:17:02.755Z - success: protocol packages registered
-2019-01-07T11:17:02.755Z - success: protocol unpack registerred
-2019-01-07T11:17:02.755Z - success: protocol disable-commonjs registerred
-2019-01-07T11:17:02.978Z - normal: connected!
-2019-01-07T11:17:02.986Z - normal: Check project D:\!yongwang\github\cocos\kxcg_jqClub
-2019-01-07T11:17:02.997Z - normal: Initializing project D:\!yongwang\github\cocos\kxcg_jqClub
-2019-01-07T11:17:03.002Z - normal: Initializing Cocos2d
-2019-01-07T11:17:03.670Z - normal: Initializing Asset Database
-2019-01-07T11:17:03.709Z - success: protocol uuid registerred
-2019-01-07T11:17:03.709Z - success: protocol db registerred
-2019-01-07T11:17:03.709Z - success: protocol thumbnail registerred
-2019-01-07T11:17:03.709Z - normal: Loading editor/builtin packages
-2019-01-07T11:17:03.840Z - success: assets loaded
-2019-01-07T11:17:03.844Z - success: builder loaded
-2019-01-07T11:17:03.847Z - success: cocos-analytics loaded
-2019-01-07T11:17:03.851Z - success: console loaded
-2019-01-07T11:17:03.892Z - success: fb-instant-games loaded
-2019-01-07T11:17:03.893Z - success: google-instant-games loaded
-2019-01-07T11:17:03.897Z - success: hierarchy loaded
-2019-01-07T11:17:03.899Z - success: inspector loaded
-2019-01-07T11:17:03.901Z - success: keystore loaded
-2019-01-07T11:17:03.904Z - success: node-library loaded
-2019-01-07T11:17:03.905Z - success: package-asset loaded
-2019-01-07T11:17:03.907Z - success: preferences loaded
-2019-01-07T11:17:03.909Z - success: project-exporter loaded
-2019-01-07T11:17:03.922Z - success: project-importer loaded
-2019-01-07T11:17:03.924Z - success: project-settings loaded
-2019-01-07T11:17:03.926Z - success: ui-kit loaded
-2019-01-07T11:17:03.928Z - success: scene loaded
-2019-01-07T11:17:03.929Z - success: sprite-editor loaded
-2019-01-07T11:17:03.933Z - success: store loaded
-2019-01-07T11:17:03.936Z - success: timeline loaded
-2019-01-07T11:17:03.936Z - normal: Loading builtin packages
-2019-01-07T11:17:03.939Z - success: asset-db-debugger loaded
-2019-01-07T11:17:03.941Z - success: code-editor loaded
-2019-01-07T11:17:03.942Z - success: color-picker loaded
-2019-01-07T11:17:04.022Z - success: fb-audience-network loaded
-2019-01-07T11:17:04.026Z - success: fb-live-stream loaded
-2019-01-07T11:17:04.029Z - success: google-play-instant loaded
-2019-01-07T11:17:04.030Z - success: jsb-adapter loaded
-2019-01-07T11:17:04.033Z - success: oppo-runtime loaded
-2019-01-07T11:17:04.035Z - success: package-manager loaded
-2019-01-07T11:17:04.190Z - success: qqplay-adapter loaded
-2019-01-07T11:17:04.192Z - success: runtime-dev-tools loaded
-2019-01-07T11:17:04.197Z - success: sdkbox loaded
-2019-01-07T11:17:04.202Z - success: tester loaded
-2019-01-07T11:17:04.205Z - success: ui-grid loaded
-2019-01-07T11:17:04.207Z - success: ui-kit-preview-extra loaded
-2019-01-07T11:17:04.209Z - success: ui-kit-preview loaded
-2019-01-07T11:17:04.211Z - success: ui-tree loaded
-2019-01-07T11:17:04.216Z - success: vivo-runtime loaded
-2019-01-07T11:17:04.217Z - success: weapp-adapter loaded
-2019-01-07T11:17:05.201Z - normal: Loading packages
-2019-01-07T11:17:05.206Z - normal: Watching packages
-2019-01-07T11:17:05.565Z - normal: Run Application
-2019-01-07T11:17:06.069Z - success: preview server running at http://localhost:7456
-2019-01-07T11:17:10.403Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-tree (could not be found)
-    at a.remove (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
-    at Object.e.remove (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
-    at r.series.n (D:\Ruanjian\CocosCreator2.0\resources\app.asar\editor-framework\lib\main\package.js:1:4613)
-    at D:\Ruanjian\CocosCreator2.0\resources\app.asar\node_modules\async\lib\async.js:718:13
-    at Immediate.iterate (D:\Ruanjian\CocosCreator2.0\resources\app.asar\node_modules\async\lib\async.js:262:13)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
-2019-01-07T11:17:10.405Z - success: ui-tree unloaded
-2019-01-07T11:17:10.411Z - success: ui-tree loaded
-2019-01-07T11:17:11.592Z - warn: Script attached to "Canvas" in scene "game.fire" is missing or invalid. Detailed information:
+2019-01-08T04:00:23.751Z - normal: Load ~/.CocosCreator/settings.json
+2019-01-08T04:00:23.755Z - normal: checking language setting...
+2019-01-08T04:00:23.755Z - normal: Language: zh
+2019-01-08T04:00:26.039Z - success: protocol editor-framework registered
+2019-01-08T04:00:26.039Z - success: protocol app registered
+2019-01-08T04:00:26.039Z - success: protocol theme registered
+2019-01-08T04:00:26.039Z - success: protocol packages registered
+2019-01-08T04:00:26.039Z - success: protocol unpack registerred
+2019-01-08T04:00:26.039Z - success: protocol disable-commonjs registerred
+2019-01-08T04:00:26.261Z - normal: connected!
+2019-01-08T04:00:26.270Z - normal: Check project D:\!yongwang\github\cocos\kxcg_jqClub
+2019-01-08T04:00:26.280Z - normal: Initializing project D:\!yongwang\github\cocos\kxcg_jqClub
+2019-01-08T04:00:26.296Z - normal: Initializing Cocos2d
+2019-01-08T04:00:27.285Z - normal: Initializing Asset Database
+2019-01-08T04:00:27.360Z - success: protocol uuid registerred
+2019-01-08T04:00:27.360Z - success: protocol db registerred
+2019-01-08T04:00:27.361Z - success: protocol thumbnail registerred
+2019-01-08T04:00:27.361Z - normal: Loading editor/builtin packages
+2019-01-08T04:00:27.591Z - success: assets loaded
+2019-01-08T04:00:27.595Z - success: builder loaded
+2019-01-08T04:00:27.609Z - success: cocos-analytics loaded
+2019-01-08T04:00:27.614Z - success: console loaded
+2019-01-08T04:00:27.661Z - success: fb-instant-games loaded
+2019-01-08T04:00:27.663Z - success: google-instant-games loaded
+2019-01-08T04:00:27.667Z - success: hierarchy loaded
+2019-01-08T04:00:27.670Z - success: inspector loaded
+2019-01-08T04:00:27.671Z - success: keystore loaded
+2019-01-08T04:00:27.675Z - success: node-library loaded
+2019-01-08T04:00:27.676Z - success: package-asset loaded
+2019-01-08T04:00:27.677Z - success: preferences loaded
+2019-01-08T04:00:27.679Z - success: project-exporter loaded
+2019-01-08T04:00:27.693Z - success: project-importer loaded
+2019-01-08T04:00:27.694Z - success: project-settings loaded
+2019-01-08T04:00:27.696Z - success: ui-kit loaded
+2019-01-08T04:00:27.699Z - success: scene loaded
+2019-01-08T04:00:27.700Z - success: sprite-editor loaded
+2019-01-08T04:00:27.706Z - success: store loaded
+2019-01-08T04:00:27.709Z - success: timeline loaded
+2019-01-08T04:00:27.709Z - normal: Loading builtin packages
+2019-01-08T04:00:27.748Z - success: asset-db-debugger loaded
+2019-01-08T04:00:27.763Z - success: code-editor loaded
+2019-01-08T04:00:27.764Z - success: color-picker loaded
+2019-01-08T04:00:27.930Z - success: fb-audience-network loaded
+2019-01-08T04:00:27.952Z - success: fb-live-stream loaded
+2019-01-08T04:00:27.964Z - success: google-play-instant loaded
+2019-01-08T04:00:27.965Z - success: jsb-adapter loaded
+2019-01-08T04:00:27.978Z - success: oppo-runtime loaded
+2019-01-08T04:00:27.981Z - success: package-manager loaded
+2019-01-08T04:00:28.470Z - success: qqplay-adapter loaded
+2019-01-08T04:00:28.480Z - success: runtime-dev-tools loaded
+2019-01-08T04:00:28.509Z - success: sdkbox loaded
+2019-01-08T04:00:28.513Z - success: tester loaded
+2019-01-08T04:00:28.516Z - success: ui-grid loaded
+2019-01-08T04:00:28.527Z - success: ui-kit-preview-extra loaded
+2019-01-08T04:00:28.532Z - success: ui-kit-preview loaded
+2019-01-08T04:00:28.533Z - success: ui-tree loaded
+2019-01-08T04:00:28.552Z - success: vivo-runtime loaded
+2019-01-08T04:00:28.554Z - success: weapp-adapter loaded
+2019-01-08T04:00:30.203Z - normal: Loading packages
+2019-01-08T04:00:30.215Z - normal: Watching packages
+2019-01-08T04:00:30.817Z - normal: Run Application
+2019-01-08T04:00:32.004Z - success: preview server running at http://localhost:7456
+2019-01-08T04:00:39.658Z - warn: Script attached to "Canvas" in scene "game.fire" is missing or invalid. Detailed information:
 Node path: "Canvas"
 Asset url: "db://assets/game.fire"
+Script UUID: "aaba03eb-9fee-4c57-8d14-297ca1d19bcb"
+Class ID: "aaba0Prn+5MV40UKXyh0ZvL"
+
+2019-01-08T04:07:21.958Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2780
+2019-01-08T04:07:33.290Z - warn: [object Object]
+2019-01-08T07:19:06.016Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:25717
+2019-01-08T07:19:21.462Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:25719
+2019-01-08T08:52:34.079Z - warn: Script attached to "Canvas" is missing or invalid. Detailed information:
+Node path: "Canvas"
 Script UUID: "aaba03eb-9fee-4c57-8d14-297ca1d19bcb"
 Class ID: "aaba0Prn+5MV40UKXyh0ZvL"
 
