@@ -62,11 +62,15 @@ cc.Class({
 
     onLoad () {
         var that = this
+        // 初始化计时器
+        that.timer = 0
+        that.starDuration  = 0 //设置随机消失的时间
+
         // 获取地平面的坐标(锚点默认在节点的中心)
         var y = that.ground.y
         var height = that.ground.height
-        var getLocal = y + height / 2
-        log(888888, y, height, getLocal)
+        that.groundY = y + height / 2
+        log(888888, y, height, that.groundY)
         // log(that.node.children)   //这里可以获取所有的节点
 
         // // var jumpHeight = that.player.jumpHeight
@@ -75,12 +79,12 @@ cc.Class({
         // 生成一个新的星星
         this.spawnNewStar();
 
-        // 19.1.8如何在星星组件上，获取主角的坐标
-        // 在主角组件上暂存 Game 对象的引用
-        that.player.getComponent('Player').game = this;
-
         // 初始化计分
         this.score = 0;
+
+        // // 19.1.8如何在星星组件上，获取主角的坐标
+        // // 在主角组件上暂存 Game 对象的引用
+        // that.player.getComponent('Player').game = this;
     },
     spawnNewStar: function() {
         var that = this
@@ -94,6 +98,11 @@ cc.Class({
         // 19.1.8如何在星星组件上，获取主角的坐标
         // 在星星组件上暂存 Game 对象的引用
         newStar.getComponent('Star').game = this;
+
+
+        // 重置计时器，根据消失时间范围随机取一个值
+        this.starDuration = this.minStarDuration + Math.random() * (this.maxStarDuration - this.minStarDuration);
+        this.timer = 0;
     },
     getNewStarPosition: function () {
         var randX = 0;
@@ -110,11 +119,22 @@ cc.Class({
         that.score  += 1
         that.scoreDisplay.string = 'score: ' + that.score
     },
-    start () {
-
-    },
+    start () {},
 
     update (dt) {
-        log(2222, dt)
+        var that = this
+        // 每帧更新计时器，超过限度还没有生成新的星星
+        // 就会调用游戏失败逻辑
+        if (this.timer > this.starDuration) {
+            this.gameOver();
+            return;
+        }
+        this.timer += dt;
     },
+    gameOver: function () {
+        this.timer = 0
+        this.player.stopAllActions(); //停止 player 节点的跳跃动作
+        // 切换到结束游戏的场景
+        cc.director.loadScene("gameOver")
+    }
 });

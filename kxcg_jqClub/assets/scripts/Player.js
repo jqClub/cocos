@@ -28,16 +28,30 @@ cc.Class({
         accRight: false,
         // 水平方向的加速度
         xSpeed: 0, 
-    },
 
+
+        // 跳跃音效资源
+        jumpAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+    },
+    // 播放音效
+    playJumpSound: function () {
+        // 调用声音引擎播放声音
+        cc.audioEngine.playEffect(this.jumpAudio, false);
+    },
     setJumpAction: function() {
         var that = this
          // 跳跃上升
          var jumpUp = cc.moveBy(this.jumpDuration, cc.v2(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
          // 下落
          var jumpDown = cc.moveBy(this.jumpDuration, cc.v2(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+        //  增加一个音效的回调函数
+        var callback = cc.callFunc(this.playJumpSound, that)
+
          // 不断重复
-         return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+         return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -116,19 +130,19 @@ cc.Class({
         } else if(that.accRight) {
             that.xSpeed += that.accel * dt
         }
-        // if(Math.abs(that.xSpeed) > that.maxMoveSpeed) {
-        //     // 乘以对应的符号，Math.abs是取绝对值
-        //     var symbol = that.xSpeed / Math.abs(that.xSpeed)
-        //     that.xSpeed = that.maxMoveSpeed * symbol
-        // }
-
-
-        var width = that.game.background.width
-        if(Math.abs(that.xSpeed) > width) {
-                    //     // 乘以对应的符号，Math.abs是取绝对值
+        if(Math.abs(that.xSpeed) > that.maxMoveSpeed) {
+            // 乘以对应的符号，Math.abs是取绝对值
             var symbol = that.xSpeed / Math.abs(that.xSpeed)
-            that.xSpeed = width * symbol
+            that.xSpeed = that.maxMoveSpeed * symbol
         }
+
+
+        // var width = that.game.background.width
+        // if(Math.abs(that.xSpeed) > width) {
+        //             //     // 乘以对应的符号，Math.abs是取绝对值
+        //     var symbol = that.xSpeed / Math.abs(that.xSpeed)
+        //     that.xSpeed = width * symbol
+        // }
         this.node.x = that.xSpeed
     },
 

@@ -16,6 +16,12 @@ cc.Class({
         // 星星和主角的收集最小间距
         pickRadius: 0,
 
+        // 跳跃音效资源
+        scoreAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -38,6 +44,12 @@ cc.Class({
 
     // onLoad () {},
 
+    // 播放音效
+    playJumpSound: function () {
+        // 调用声音引擎播放声音
+        cc.audioEngine.playEffect(this.scoreAudio, false);
+    },
+
     start () {
         var that = this
        
@@ -57,6 +69,8 @@ cc.Class({
     // 收集星星的函数
     onPicked: function() {
         var that = this
+        that.playJumpSound()
+
         // 生成一个新的星星
         that.game.spawnNewStar()
 
@@ -73,5 +87,10 @@ cc.Class({
             that.onPicked()
             return 
         }
+
+         // 根据 Game 脚本中的计时器更新星星的透明度
+         var opacityRatio = 1 - this.game.timer/this.game.starDuration;
+         var minOpacity = 50;
+         this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
     },
 });
